@@ -1,0 +1,66 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 24px;
+  animation: gridFadeIn 300ms ease both;
+}
+
+@keyframes gridFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.card {
+  border-radius: 16px;
+  border: 1px solid #e5e7eb;
+  padding: 0;
+  background: white;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.image,
+.row,
+.rowShort,
+.button {
+  border-radius: 8px;
+  background: linear-gradient(90deg, #f3f4f6 25%, #e5e7eb 37%, #f3f4f6 63%);
+  background-size: 400% 100%;
+  animation: shimmer 2s ease infinite;
+}
+
+.image {
+  height: 180px;
+  width: 100%;
+}
+
+.row {
+  margin: 12px;
+  margin-bottom: 8px;
+  height: 16px;
+}
+
+.rowShort {
+  margin: 0 12px 12px;
+  width: 65%;
+  height: 14px;
+}
+
+.button {
+  margin: 0 12px 12px;
+  height: 40px;
+  width: calc(100% - 24px);
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 120% 0;
+  }
+  100% {
+    background-position: -120% 0;
+  }
+}
