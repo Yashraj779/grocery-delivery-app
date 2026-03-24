@@ -4,12 +4,12 @@
 const http = require('http');
 
 const SERVICES = {
-  'Auth': { port: 5001, endpoints: ['/health'] },
-  'Product': { port: 5002, endpoints: ['/health'] },
-  'Cart': { port: 5003, endpoints: ['/health'] },
-  'Order': { port: 5004, endpoints: ['/health'] },
-  'Delivery': { port: 5005, endpoints: ['/health'] },
-  'Gateway': { port: 5000, endpoints: ['/health'] },
+  Auth: { port: 5001 },
+  Product: { port: 5002 },
+  Cart: { port: 5003 },
+  Order: { port: 5004 },
+  Delivery: { port: 5005 },
+  Gateway: { port: 5000 },
 };
 
 const testService = (name, port) => {

@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 const http = require('http');
-const https = require('https');
 
 const test = (method, host, port, path, body = null) => {
   return new Promise((resolve, reject) => {

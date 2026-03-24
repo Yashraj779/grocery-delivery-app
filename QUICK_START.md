@@ -198,4 +198,4 @@ All data will now persist properly in MongoDB!
 
 ---
 
-**For more details, see:** `COMPLETE_FIX_SUMMARY.md`
+This quick-start guide is now the single source of truth for restart and validation steps.
